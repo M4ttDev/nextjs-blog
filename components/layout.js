@@ -6,8 +6,8 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = '[Your Name]'
-export const siteTitle = 'Next.js Sample Website'
+const name = 'M4ttDev'
+export const siteTitle = 'Scheduline'
 
 export default function Layout({ children, home }) {
   return (
@@ -26,6 +26,7 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <title>{siteTitle}</title>
       </Head>
       <Script
         src="https://connect.facebook.net/en_US/sdk.js"
