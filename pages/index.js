@@ -10,7 +10,11 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
+      <h1 className="title">
+        Read <Link href="/posts/first-post">this page!</Link>
+      </h1>
       <section className={utilStyles.headingMd}>
         <p>[Your Self Introduction]</p>
         <p>

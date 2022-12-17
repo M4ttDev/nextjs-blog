@@ -1,13 +1,16 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Script from 'next/script'
 
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import React from 'react';
 
-const name = '[Your Name]'
-export const siteTitle = 'Next.js Sample Website'
+import Head from 'next/head';
+import Image from 'next/image';
+import Script from 'next/script';
+
+import styles from './layout.module.css';
+import utilStyles from '../styles/utils.module.css';
+import Link from 'next/link';
+
+const name = 'M4ttDev'
+export const siteTitle = 'Scheduline'
 
 export default function Layout({ children, home }) {
   return (
@@ -26,6 +29,7 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <title>{siteTitle}</title>
       </Head>
       <Script
         src="https://connect.facebook.net/en_US/sdk.js"
